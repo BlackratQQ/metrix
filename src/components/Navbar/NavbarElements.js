@@ -9,7 +9,8 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   font-size: 1rem;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 10;
 
