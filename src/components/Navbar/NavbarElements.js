@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import {Link as LinkRouter} from 'react-router-dom'
 import {Link as LinkScroll} from 'react-scroll'
+import {FaCaretDown} from "react-icons/fa";
 
 
 export const Nav = styled.nav`
@@ -85,6 +86,11 @@ export const NavLinks = styled(LinkScroll)`
 	&.active {
 		border-bottom: 3px solid #01bf71;
 	}
+  
+  &:hover{
+		border-bottom: 3px solid #01bf71;
+    color: #01bf71;
+  }
 `
 
 export const NavBtn = styled.nav`
@@ -116,13 +122,9 @@ export const NavBtnLink = styled(LinkRouter)`
   }
 `
 
-
-
-
-
-
-
-
+export const ArrowDown=styled(FaCaretDown)`
+margin-left: 5px;
+`
 
 
 

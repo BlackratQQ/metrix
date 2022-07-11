@@ -3,8 +3,8 @@ import {FaBars} from "react-icons/fa";
 import {IconContext} from 'react-icons/lib'
 import {animateScroll as scroll} from 'react-scroll'
 
-
 import {
+  ArrowDown,
   MobileIcon,
   Nav,
   NavbarContainer,
@@ -13,7 +13,7 @@ import {
   NavItem,
   NavLinks,
   NavLogo,
-  NavMenu
+  NavMenu,
 } from './NavbarElements'
 
 const Navbar = ({toggle}) => {
@@ -27,6 +27,7 @@ const Navbar = ({toggle}) => {
     }
   }
 
+
   useEffect(() => {
     window.addEventListener('scroll', changeNav)
   }, [])
@@ -37,7 +38,7 @@ const Navbar = ({toggle}) => {
 
   return (
     <div>
-      <IconContext.Provider value={{color: '#FF0000'}}>
+      <IconContext.Provider value={{color: '#fff'}}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>Logo</NavLogo>
@@ -63,7 +64,9 @@ const Navbar = ({toggle}) => {
                   spy={true}
                   exact='true'
                   offset={-80}
-                >Discover</NavLinks>
+                >Discover
+                  <ArrowDown/>
+                </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
@@ -88,7 +91,7 @@ const Navbar = ({toggle}) => {
             </NavMenu>
             <NavBtn>
               <NavBtnLink
-                to="/signin"
+                to="/"
                 smooth={true}
                 duration={500}
                 spy={true}
