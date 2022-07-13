@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
+import {green, white} from "../../Theme";
 
 
 export const FooterContainer = styled.footer`
@@ -41,7 +42,7 @@ export const FooterLinkItems = styled.div`
   text-align: left;
   width: 160px;
   box-sizing: border-box;
-  color: #fff;
+  color: ${white};
 
 	@media screen and (max-width: 420px){
 		margin: 0;
@@ -56,14 +57,14 @@ export const FooterLinkTitle = styled.h1`
 `
 
 export const FooterLink = styled(Link)`
-  color: #fff;
+  color: ${white};
   text-decoration: none;
   margin-bottom: 0.5rem;
   font-size: 14px;
 
   
   &:hover{
-    color: #01bf71;
+    color: ${green};
     transition: 0.3s ease-out;
   }
 `
@@ -86,7 +87,7 @@ export const SocialMediaWrap = styled.div`
 `
 
 export const SocialLogo = styled(Link)`
-  color: #fff;
+  color: ${white};
   justify-content: start;
 	cursor: pointer;
   text-decoration: none;
@@ -98,7 +99,7 @@ export const SocialLogo = styled(Link)`
 `
 
 export const WebsiteRights = styled.div`
-  color: #fff;
+  color: ${white};
   margin-bottom: 16px;
 `
 
@@ -111,11 +112,11 @@ export const SocialIcons = styled.div`
 `
 
 export const SocialIconLink = styled.a`
-  color: #fff;
+  color: ${white};
   font-size: 24px;
   
   &:hover{
-    color: #01bf71;
+    color: ${green};
     font-size: 30px;
   }
 `

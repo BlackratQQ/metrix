@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
-import { MenuItems } from './MenuItems';
-import './Dropdown.css';
-import { Link } from 'react-router-dom';
+import React, {useState} from 'react';
+import {MenuItems} from './MenuItems';
+
+
+import {Wrapper, WrapperLi, MenuLink} from './DropdownElements'
+
 
 const Dropdown = () => {
   const [click, setClick] = useState(false);
@@ -10,26 +12,22 @@ const Dropdown = () => {
 
   return (
     <div>
-      <ul
+      <Wrapper
         onClick={handleClick}
-        className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
+        className={click}
       >
         {MenuItems.map((item, index) => {
           return (
-            <li key={index}>
-              <Link
-                className={item.cName}
-                to={item.path}
-                onClick={() => setClick(false)}
-              >
-                {item.title}
-              </Link>
-            </li>
+            <WrapperLi
+              key={index}>
+              <MenuLink to={item.path}>{item.title}</MenuLink>
+            </WrapperLi>
           );
         })}
-      </ul>
+      </Wrapper>
     </div>
-  );
+  )
+    ;
 }
 
 export default Dropdown;

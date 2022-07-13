@@ -3,6 +3,9 @@ import {FaBars} from "react-icons/fa";
 import {IconContext} from 'react-icons/lib'
 import {animateScroll as scroll} from 'react-scroll'
 
+import { Link } from 'react-router-dom';
+import Dropdown from './Dropdown';
+
 import {
   ArrowDown,
   MobileIcon,
@@ -36,6 +39,27 @@ const Navbar = ({toggle}) => {
     scroll.scrollToTop()
   }
 
+
+  const [dropdown, setDropdown] = useState(false);
+
+
+  const onMouseEnter = () => {
+    if (window.innerWidth < 768) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 768) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
+
+
   return (
     <div>
       <IconContext.Provider value={{color: '#fff'}}>
@@ -57,15 +81,13 @@ const Navbar = ({toggle}) => {
                 >About</NavLinks> {/*ve styled componentách je class &:active, která určuje barvu*/}
               </NavItem>
               <NavItem>
+
                 <NavLinks
-                  to="discover"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact='true'
-                  offset={-80}
+                  onMouseEnter={onMouseEnter}
+                  onMouseLeave={onMouseLeave}
                 >Discover
                   <ArrowDown/>
+                  {dropdown && <Dropdown />}
                 </NavLinks>
               </NavItem>
               <NavItem>
