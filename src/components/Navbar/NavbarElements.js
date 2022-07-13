@@ -88,7 +88,7 @@ export const NavLinks = styled(LinkScroll)`
 		border-bottom: 3px solid ${green};
 	}
 
-	&:hover {
+&:hover {
 		border-bottom: 3px solid ${green};
 		color: ${green};
 	}
