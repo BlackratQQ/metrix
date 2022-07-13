@@ -10,18 +10,18 @@ export const Wrapper = styled.ul`
 	list-style: none;
 	text-align: center;
 	transform: translateX(-73%);
-  
-  //display: ${props => props.click ? "none" : "block"}
+
+		//display: ${props => props.click ? "none" : "block"}
 `
 
 export const WrapperLi = styled.li`
 	background: #000;
 	cursor: pointer;
-  color: #fff;
-  
-  &:hover{
+	color: #fff;
+
+	&:hover {
 		background: ${green};
-  }
+	}
 
 `
 
@@ -33,6 +33,13 @@ export const MenuLink = styled(Link)`
 	color: #fff;
 	padding: 16px;
 
+	&:only-child {
+		margin-left: 12.5%;
+		width: 75%;
+		border-bottom: 1px solid ${green};
+	}
 
-  
+
+
+
 `
