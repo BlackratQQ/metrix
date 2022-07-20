@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
-import Sidebar from "../Sidebar";
-import Navbar from "../Navbar";
-import HeroSection from "../HeroSection";
-import InfoSection from "../InfoSection";
+import Sidebar from "../Sidebar/Sidebar";
+import Navbar from "../Navbar/Navbar";
+import HeroSection from "../HeroSection/Hero";
+import InfoSection from "../InfoSection/Info";
 import {homeObjOne, homeObjThree, homeObjTwo} from "../InfoSection/Data";
-import Services from "../Services";
-import Footer from "../Footer";
+import Services from "../Services/Services";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)

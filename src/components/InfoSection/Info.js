@@ -15,7 +15,7 @@ import {
   Subtitle,
   TextWrapper,
   TopLine,
-} from "./InfoElements";
+} from "./styledInfo";
 
 const InfoSection = (
   {

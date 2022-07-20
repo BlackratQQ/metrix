@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {MenuItems} from './MenuItems';
 
 
-import {Wrapper, WrapperLi, MenuLink} from './DropdownElements'
+import {Wrapper, WrapperLi, MenuLink} from './styledDropdown'
 
 
 const Dropdown = () => {

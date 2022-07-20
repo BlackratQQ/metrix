@@ -73,6 +73,24 @@ export const NavItem = styled.li`
 	height: 80px;
 	display: flex;
 	align-items: center;
+  position: relative;
+
+/*Animated underline*/
+	&:after {
+		bottom: 0;
+		content: "";
+		display: block;
+		height: 3px;
+		left: 50%;
+		position: absolute;
+		background: ${green};
+		transition: width 0.3s ease 0s, left 0.3s ease 0s;
+		width: 0;
+	}
+	&:hover:after {
+		width: 100%;
+		left: 0;
+	}
 `
 
 export const NavLinks = styled(LinkScroll)`
@@ -87,11 +105,12 @@ export const NavLinks = styled(LinkScroll)`
 	&.active {
 		border-bottom: 3px solid ${green};
 	}
-
-&:hover {
-		border-bottom: 3px solid ${green};
-		color: ${green};
-	}
+/*Just under line*/
+	// &:hover {
+	// 	border-bottom: 3px solid ${green};
+	// 	color: ${green};
+	// }
+  
 `
 
 export const NavBtn = styled.nav`

@@ -17,7 +17,7 @@ import {
   NavLinks,
   NavLogo,
   NavMenu,
-} from './NavbarElements'
+} from './styledNavbar'
 
 const Navbar = ({toggle}) => {
   const [scrollNav, setScrollNav] = useState(false)

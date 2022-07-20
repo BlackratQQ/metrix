@@ -12,7 +12,7 @@ import {
   ServicesIcon,
   ServicesP,
   ServicesWrapper
-} from './ServicesElements'
+} from './styledServices'
 
 
 const Services = () => {

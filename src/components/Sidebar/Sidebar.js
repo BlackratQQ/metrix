@@ -9,7 +9,7 @@ import {
   SidebarRoute,
   SidebarWrapper,
   SideBtnWrap
-} from './SidebarElements'
+} from './styledSidebar'
 
 const Sidebar = ({isOpen, toggle}) => {
   return (

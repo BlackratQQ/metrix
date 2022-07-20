@@ -10,7 +10,7 @@ import {
   HeroH1,
   HeroP,
   VideoBg
-} from './HeroElements'
+} from './styledHero'
 import {Button} from '../ButtonElements'
 
 const Hero = () => {

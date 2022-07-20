@@ -22,7 +22,7 @@ import {
   SocialMedia,
   SocialMediaWrap,
   WebsiteRights
-} from './FooterElements'
+} from './styledFooter'
 
 const Footer = () => {
   const toggleHome = () => {
