@@ -108,6 +108,36 @@ const Navbar = ({toggle}) => {
                   offset={-80}
                 >Sign Up</NavLinks>
               </NavItem>
+              <NavItem>
+                <NavLinks
+                  to="sponsors"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact='true'
+                  offset={-80}
+                >Sponsors</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks
+                  to="coaches"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact='true'
+                  offset={-80}
+                >Trenéři</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks
+                  to="athletes"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact='true'
+                  offset={-80}
+                >Atleti</NavLinks>
+              </NavItem>
             </NavMenu>
             <NavBtn>
               <NavBtnLink
