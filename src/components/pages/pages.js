@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import Sidebar from "../Sidebar/Sidebar";
-import Navbar from "../Navbar/Navbar";
+import Sidebar from "../Header/Sidebar/Sidebar";
+import Navbar from "../Header/Navbar/Navbar"
 import HeroSection from "../HeroSection/Hero";
 import InfoSection from "../InfoSection/Info";
 import {homeObjOne, homeObjThree, homeObjTwo} from "../InfoSection/Data";

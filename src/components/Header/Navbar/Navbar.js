@@ -3,9 +3,6 @@ import {FaBars} from "react-icons/fa";
 import {IconContext} from 'react-icons/lib'
 import {animateScroll as scroll} from 'react-scroll'
 
-import { Link } from 'react-router-dom';
-import Dropdown from './Dropdown';
-
 import {
   ArrowDown,
   MobileIcon,
@@ -18,6 +15,7 @@ import {
   NavLogo,
   NavMenu,
 } from './styledNavbar'
+import Dropdown from "./Dropdown/Dropdown";
 
 const Navbar = ({toggle}) => {
   const [scrollNav, setScrollNav] = useState(false)

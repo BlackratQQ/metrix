@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import {Link as LinkRouter} from 'react-router-dom'
 import {Link as LinkScroll} from 'react-scroll'
 import {FaCaretDown} from "react-icons/fa";
-import {green, white} from "../../Theme";
+import {green, white} from "../../../Theme";
 
 
 export const Nav = styled.nav`

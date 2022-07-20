@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {green, white} from "../../Theme";
+import {green, white} from "../../../../Theme";
 import {Link} from 'react-router-dom';
 
 export const Wrapper = styled.ul`
